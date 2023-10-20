@@ -40,17 +40,20 @@ int main()
 	avg_tat=(float)total/n; //average turnaround time
 	printf("\n\nAverage Waiting Time=%f",avg_wt);
 	printf("\nAverage Turnaround Time=%f\n",avg_tat);
-}
+} 
+```
 # OUTPUT:
+![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/e3414189-23db-4221-b4fa-36d1c0428b52)
 
-RESULT:
+# RESULT:
 First-Come-First-Serve Scheduling is implemented successfully.
-SHORTEST JOB FIRST PREEMPTIVE SCHEDULING
-AIM:
+# SHORTEST JOB FIRST PREEMPTIVE SCHEDULING
+# AIM:
 To implement Shortest Job First (SJF) Preemptive Scheduling
-ALGORITHM:
+# ALGORITHM:
 Start the process Get the number of processes to be inserted Sort the processes according to the burst tiine and allocate the one with shortest burst to execute first If two process have same burst length then FCFS scheduling algorithm is used Calculate the total and average waiting time and turn around time Display the values Stop the process
-PROGRAM:
+# PROGRAM:
+```
 #include <stdio.h>
   
 int main() 
@@ -96,16 +99,19 @@ int main()
       printf("Average Turnaround Time:t%lfn", average_turnaround_time);
       return 0;
 }
-OUTPUT:
+```
+# OUTPUT:
+![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/22d035b7-955e-446c-b303-648c50f5c5b2)
 
-RESULT:
+# RESULT:
 Shortest Job First (SJF) preemptive scheduling is implemented successfully.
-SHORTEST JOB FIRST NON - PREEMPTIVE SCHEDULING
-AIM:
+# SHORTEST JOB FIRST NON - PREEMPTIVE SCHEDULING
+# AIM:
 To implement Shortest Job First (SJF) Non-Preemptive Scheduling
-ALGORITHM:
+# ALGORITHM:
 Start the process Get the number of processes to be inserted Get the corresponding priority of processes Sort the processes according to the priority and allocate the one with highest priority to execute first If two process have same priority then FCFS scheduling algorithm is used Calculate the total and average waiting time and turnaround time Display the values Stop the process
-PROGRAM:
+# PROGRAM:
+```
 #include<stdio.h>
  int main()
 {
@@ -168,15 +174,18 @@ PROGRAM:
     printf("\nAverage Waiting Time=%f",avg_wt);
     printf("\nAverage Turnaround Time=%f",avg_tat);
 }
-OUTPUT:
+```
+# OUTPUT:
+![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/4d61ec7e-34b0-4ff3-aa6f-2719fa6cfc3b)
 
-RESULT:
+# RESULT:
 Shortest Job First (SJF) Non-preemptive scheduling is implemented successfully.
-ROUND ROBIN SCHEDULING
-AIM: To implement Round Robin (RR) Scheduling
-ALGORITHM:
+# ROUND ROBIN SCHEDULING
+# AIM: To implement Round Robin (RR) Scheduling
+# ALGORITHM:
 Start the process Get the number of elements to be inserted Get the value for burst time for individual processes Get the value for time quantum Make the CPU scheduler go around the ready queue allocating CPU to each process for the time interval specified Make the CPU scheduler pick the first process and set time to interrupt after quantum. And after it's expiry dispatch the process If the process has burst time less than the time quantum then the process is released by the CPU If the process has burst time greater than time quantum then it is interrupted by the OS and the process is put to the tail of ready queue and the schedule selects next process from head of the queue Calculate the total and average waiting time and turnaround time Display the results
-PROGRAM:
+# PROGRAM:
+```
 #include<stdio.h>
 int main()
 {
@@ -237,16 +246,19 @@ int main()
     printf("\n%d\t\t %d\t\t %d\t\t %d\n",i+1,bt[i],wt[i],tat[i]); 
     printf("\nAverage waiting time=%f\nAverage turn around time=%f",awt,atat);
 }
-OUTPUT:
+```
+# OUTPUT:
+![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/7e0f05cf-90f0-4fa1-ae19-a29b5515b3f6)
 
-RESULT:
+# RESULT:
 Round Robin (RR) Scheduling is implemented successfully.
-PRIORITY PREEMPTIVE SCHEDULING
-AIM:
+# PRIORITY PREEMPTIVE SCHEDULING
+# AIM:
 To implement Priority Preemptive Scheduling
-ALGORITHM:
+# ALGORITHM:
 Start the process Get the number of processes to be inserted Get the corresponding priority of processes Sort the processes according to the priority and allocate the one with highest priority to execute first If two process have same priority then FCFS scheduling algorithm is used Calculate the total and average waiting time and turnaround time Display the values Stop the process
-PROGRAM:
+# PROGRAM:
+```
 #include<stdio.h>
 struct process
 {
@@ -320,16 +332,19 @@ int main()
     
     return 0;
 }
-OUTPUT:
+```
+# OUTPUT:
+![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/b49cefbc-71ac-437b-9597-27cdbec4bcd4)
 
-RESULT:
+# RESULT:
 Priority Preemptive scheduling is implemented successfully.
-PRIORITY NON - PREEMPTIVE SCHEDULING
-AIM:
+# PRIORITY NON - PREEMPTIVE SCHEDULING
+# AIM:
 To implement Priority Non-Preemptive Scheduling
-ALGORITHM:
+# ALGORITHM:
 Start the process Get the number of processes to be inserted Get the corresponding priority of processes Sort the processes according to the priority and allocate the one with highest priority to execute first If two process have same priority then FCFS scheduling algorithm is used Calculate the total and average waiting time and turnaround time Display the values Stop the process
-PROGRAM:
+# PROGRAM:
+```
 #include<stdio.h>
  
 int main()
@@ -401,7 +416,9 @@ int main()
  
 	return 0;
 }
-OUTPUT:
+```
+# OUTPUT:
+![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/ac519ba0-ddf1-49d8-900b-73958761a9c0)
 
-RESULT:
+# RESULT:
 Priority Non-preemptive scheduling is implemented successfully
