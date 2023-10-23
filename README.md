@@ -421,4 +421,4 @@ int main()
 ![image](https://github.com/karthika28112004/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/128035087/ac519ba0-ddf1-49d8-900b-73958761a9c0)
 
 # RESULT:
-Priority Non-preemptive scheduling is implemented successfully
+Priority Non-preemptive scheduling is implemented successfully.
